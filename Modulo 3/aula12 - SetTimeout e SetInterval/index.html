@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout & setInterval</title>
+</head>
+<body>
+
+    <h1>0</h1>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">stop</button>
+    
+</body>
+    <script>
+        const h1 = document.querySelector('h1')
+        let myNumber = 0
+        let cronometro
+
+
+        function start(){
+            cronometro = setInterval(function(){
+                myNumber++
+                h1.innerHTML = myNumber
+            }, 1000)
+        }
+
+        function stop() {
+            clearInterval(cronometro)
+        }
+
+
+    </script>
+</html>
