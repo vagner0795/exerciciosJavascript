@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+    <title>Samurai - Jokenpô</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Jokenpô</h1>
+
+        <div class="container-button">
+            <button id="rock" onclick="playHuman('rock')"><img src="./assets/pedra.png" alt="rock-img"></button>
+            <button id="paper" onclick="playHuman('paper')"><img src="./assets/papel.png" alt="paper-img"></button>
+            <button id="scissor" onclick="playHuman('scissor')"><img src="./assets/tesoura.png" alt="scissor-img"></button>
+        </div>
+        <p class="result"></p>
+        <p class="your-score">Sua pontuação: <span id="human-score">0</span></p>
+        <p class="machine-score">Pontuação do seu Rival: <span id="machine-score">0</span></p>
+    </div>
+
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
